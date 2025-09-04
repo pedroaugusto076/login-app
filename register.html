@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastre-se</title>
+  <link rel="stylesheet" href="register.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="register-container">
+    <div class="register-card">
+      <img src="img.svg" alt="User Icon" class="user-icon">
+      <h1>Cadastre-se</h1>
+      <p>Crie sua conta para começar</p>
+
+      <form id="registerForm">
+        <div class="input-group">
+          <input type="text" id="username" required placeholder=" ">
+          <label>Usuário</label>
+        </div>
+
+        <div class="input-group">
+          <input type="email" id="email" required placeholder=" ">
+          <label>Email</label>
+        </div>
+
+        <div class="input-group">
+          <input type="password" id="password" required placeholder=" ">
+          <label>Senha</label>
+        </div>
+
+        <div class="input-group">
+          <input type="password" id="confirmPassword" required placeholder=" ">
+          <label>Confirme a senha</label>
+        </div>
+
+        <button type="submit">Criar Conta</button>
+        <p class="error-message" id="errorMessage"></p>
+      </form>
+
+      <p class="login-link">Já tem conta? <a href="login.html">Entrar</a></p>
+    </div>
+  </div>
+
+  <script src="register.js"></script>
+</body>
+</html>
